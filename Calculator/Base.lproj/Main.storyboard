@@ -38,7 +38,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="0" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -52,7 +52,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
                                 <state key="normal" title="+" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -66,7 +66,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="34"/>
                                 <state key="normal" title="=" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -80,7 +80,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="25"/>
                                 <state key="normal" title="&lt;&lt;&lt;" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -94,7 +94,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="1" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -108,7 +108,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="2" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -122,7 +122,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="3" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -136,7 +136,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="6" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -150,7 +150,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="9" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -164,7 +164,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="5" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -178,7 +178,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="8" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -192,7 +192,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="7" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -206,7 +206,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
                                 <state key="normal" title="4" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -220,7 +220,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
                                 <state key="normal" title="-" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -234,7 +234,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
                                 <state key="normal" title="/" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -248,7 +248,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
                                 <state key="normal" title="*" backgroundImage="Button Border">
-                                    <color key="titleColor" red="0.81816874954272756" green="0.35518000934830624" blue="0.54750257563550908" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078431372547" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -318,6 +318,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Button Border" width="70" height="71"/>
+        <image name="Button Border" width="221" height="220"/>
     </resources>
 </document>
