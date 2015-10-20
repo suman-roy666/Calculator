@@ -51,9 +51,15 @@
         operand2 = ( operand2 * 10) + digit ;
     }
     
-    [ _inputString appendString:[ NSString stringWithFormat:@"%d", digit] ];
-    
-    
+    if ( [self.inputString isEqualToString:@"0" ] ) {
+        
+        [ _inputString setString:[ NSString stringWithFormat:@"%d", digit] ];
+        
+    } else {
+        
+        [ _inputString appendString:[ NSString stringWithFormat:@"%d", digit] ];
+        
+    }
 }
 
 - (void)addOperator: ( Operation) nextOperation{

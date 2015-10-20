@@ -25,7 +25,7 @@
     
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,10 +87,10 @@
 }
 
 - (IBAction)numberButtonZeroHandler:(id)sender{
-
+    
     [ operationHandler addDigit:0 ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
-
+    
 }
 
 
@@ -101,7 +101,7 @@
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
-
+    
 }
 
 - (IBAction)functonButtonSubtractHandler:(id)sender{
@@ -143,17 +143,16 @@
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
     
     [ operationHandler clearOperations ];
-
+    
     
 }
 
 - (IBAction)functionButtonRemoveHandler:(id)sender {
     
-    if ( ![operationHandler.inputString isEqualToString:@"0" ] ) {
-        [ operationHandler clearOperations ];
-        [ self.inputDisplayLabel setText: operationHandler.inputString ];
-        [ self.outputDisplayLabel setText: operationHandler.outputString ];
-    }
+    [ operationHandler clearOperations ];
+    [ self.inputDisplayLabel setText: operationHandler.inputString ];
+    [ self.outputDisplayLabel setText: operationHandler.outputString ];
+    
 }
 
 @end
