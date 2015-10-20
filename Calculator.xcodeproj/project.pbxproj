@@ -14,6 +14,7 @@
 		11F258081BD5F4FD00BF1908 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F258071BD5F4FD00BF1908 /* Images.xcassets */; };
 		11F2580B1BD5F4FD00BF1908 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F258091BD5F4FD00BF1908 /* LaunchScreen.xib */; };
 		11F258171BD5F4FD00BF1908 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F258161BD5F4FD00BF1908 /* CalculatorTests.m */; };
+		11F258271BD61EBF00BF1908 /* CalculatorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F258261BD61EBF00BF1908 /* CalculatorOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		11F258101BD5F4FD00BF1908 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F258151BD5F4FD00BF1908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F258161BD5F4FD00BF1908 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		11F258251BD61EBF00BF1908 /* CalculatorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorOperation.h; sourceTree = "<group>"; };
+		11F258261BD61EBF00BF1908 /* CalculatorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		11F257F91BD5F4FD00BF1908 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				11F258241BD61EA200BF1908 /* Operation Files */,
 				11F257FE1BD5F4FD00BF1908 /* AppDelegate.h */,
 				11F257FF1BD5F4FD00BF1908 /* AppDelegate.m */,
 				11F258011BD5F4FD00BF1908 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				11F258151BD5F4FD00BF1908 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11F258241BD61EA200BF1908 /* Operation Files */ = {
+			isa = PBXGroup;
+			children = (
+				11F258251BD61EBF00BF1908 /* CalculatorOperation.h */,
+				11F258261BD61EBF00BF1908 /* CalculatorOperation.m */,
+			);
+			name = "Operation Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				11F258031BD5F4FD00BF1908 /* ViewController.m in Sources */,
 				11F258001BD5F4FD00BF1908 /* AppDelegate.m in Sources */,
 				11F257FD1BD5F4FD00BF1908 /* main.m in Sources */,
+				11F258271BD61EBF00BF1908 /* CalculatorOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

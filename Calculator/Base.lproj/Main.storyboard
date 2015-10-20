@@ -1,25 +1,323 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="right" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="e7Y-4s-8Xo" userLabel="Input Display Label">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <color key="textColor" red="0.20000001788139343" green="0.91372555494308472" blue="0.93725496530532837" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="359" height="76"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSL-ji-b4J" userLabel="Output Display Label">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <color key="textColor" red="0.16078431904315948" green="0.96078437566757202" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="112" width="359" height="76"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aa-dX-nRW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="1" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="331" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonOneHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sNQ-p7-VpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM5-cG-roZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="2" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="331" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonTwoHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="400-Mf-JNH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r0-DK-PvK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="0" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="577" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonZeroHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lsQ-iW-GUa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0D-Pi-Ned">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="3" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="331" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonThreeHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iCm-ya-r4W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIy-9G-uqr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="6" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="417" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonSixHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Zo-nF-K8f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axU-O8-LN3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="9" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="499" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonNineHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yiH-Ai-pCs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfR-Io-6E9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="5" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="417" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonFiveHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4mH-V5-6C5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCa-v6-DHx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="8" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="499" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonEightHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fbm-kQ-12G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6E-wb-OTc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="7" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="499" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonSevenHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qa2-QI-75l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QC7-fg-EGv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="43"/>
+                                <state key="normal" title="4" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="417" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonFourHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3BI-8c-7dv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eis-nf-p47">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
+                                <state key="normal" title="-" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="499" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="functonButtonSubtractHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="38h-b1-1dy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfd-f6-NgI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
+                                <state key="normal" title="+" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="577" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="functonButtonAddHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vQh-x4-poE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVd-cR-cJt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
+                                <state key="normal" title="/" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="331" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="functonButtonDivideHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ghR-PH-m5x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7q-va-J4P">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="31"/>
+                                <state key="normal" title="*" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="283" y="417" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="functonButtonMultiplyHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tuq-Wl-pqS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxX-cX-dXg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="34"/>
+                                <state key="normal" title="=" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="577" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="functionButtonResultHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F3Q-jH-t4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omq-8W-4XE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="&lt;&lt;&lt;" backgroundImage="Button Border">
+                                    <color key="titleColor" red="0.68627450980392157" green="0.10588235294117647" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="577" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="functionButtonRemoveHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i1I-IX-QSM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.019607843831181526" green="0.0078431377187371254" blue="0.023529414087533951" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="e7Y-4s-8Xo"/>
+                                <exclude reference="sSL-ji-b4J"/>
+                                <exclude reference="4aa-dX-nRW"/>
+                                <exclude reference="zM5-cG-roZ"/>
+                                <exclude reference="9r0-DK-PvK"/>
+                                <exclude reference="F0D-Pi-Ned"/>
+                                <exclude reference="QIy-9G-uqr"/>
+                                <exclude reference="axU-O8-LN3"/>
+                                <exclude reference="KfR-Io-6E9"/>
+                                <exclude reference="TCa-v6-DHx"/>
+                                <exclude reference="n6E-wb-OTc"/>
+                                <exclude reference="QC7-fg-EGv"/>
+                                <exclude reference="Eis-nf-p47"/>
+                                <exclude reference="Sfd-f6-NgI"/>
+                                <exclude reference="NVd-cR-cJt"/>
+                                <exclude reference="b7q-va-J4P"/>
+                                <exclude reference="DxX-cX-dXg"/>
+                                <exclude reference="omq-8W-4XE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="e7Y-4s-8Xo"/>
+                                <include reference="sSL-ji-b4J"/>
+                                <include reference="4aa-dX-nRW"/>
+                                <include reference="zM5-cG-roZ"/>
+                                <include reference="9r0-DK-PvK"/>
+                                <include reference="F0D-Pi-Ned"/>
+                                <include reference="QIy-9G-uqr"/>
+                                <include reference="axU-O8-LN3"/>
+                                <include reference="KfR-Io-6E9"/>
+                                <include reference="TCa-v6-DHx"/>
+                                <include reference="n6E-wb-OTc"/>
+                                <include reference="QC7-fg-EGv"/>
+                                <include reference="Eis-nf-p47"/>
+                                <include reference="Sfd-f6-NgI"/>
+                                <include reference="NVd-cR-cJt"/>
+                                <include reference="b7q-va-J4P"/>
+                                <include reference="DxX-cX-dXg"/>
+                                <include reference="omq-8W-4XE"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="inputDisplayLabel" destination="e7Y-4s-8Xo" id="JSy-jx-kM4"/>
+                        <outlet property="outputDisplayLabel" destination="sSL-ji-b4J" id="Qqj-4S-ItD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="699.75" y="438.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button Border" width="60" height="61"/>
+    </resources>
 </document>
