@@ -10,10 +10,10 @@
 
 @implementation CalculatorOperation{
     
-    int operand1,
-    operand2;
+    float operand1,
+        operand2;
     
-    float result;
+    //float result;
     
     Operation currentOperation;
     
@@ -24,7 +24,7 @@
     
     operand1 = 0;
     operand2 = 0;
-    result = 0;
+    //result = 0;
     _outputString =  [ NSMutableString stringWithString: @"0" ];
     _inputString =  [ NSMutableString stringWithString: @"0" ];
     
@@ -93,7 +93,7 @@
             
         case DIVIDE:
             
-            operand1 = operand1 / operand2;
+            operand1 =  ( operand2 == 0 && ![ self.outputString isEqualToString:@"0" ] ) ? INFINITY :operand1 / operand2;
             
             break;
             
@@ -109,7 +109,7 @@
     operand2 = 0;
     
     [ self.inputString appendString: operatorStrings[currentOperation] ];
-    [ self.outputString setString: [ NSString stringWithFormat:@"%d",operand1]];
+    [ self.outputString setString: [ NSString stringWithFormat:@"%.2f",operand1]];
     
 }
 
