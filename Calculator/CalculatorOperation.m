@@ -24,7 +24,6 @@
     
     operand1 = 0;
     operand2 = 0;
-    //result = 0;
     _outputString =  [ NSMutableString stringWithString: @"0" ];
     _inputString =  [ NSMutableString stringWithString: @"0" ];
     
