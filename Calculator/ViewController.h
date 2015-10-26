@@ -31,8 +31,10 @@
 - (IBAction)functonButtonMultiplyHandler:(id)sender;
 
 - (IBAction)functionButtonResultHandler:(id)sender;
-- (IBAction)functionButtonRemoveHandler:(id)sender;
+- (IBAction)functionButtonClearHandler:(id)sender;
+- (IBAction)functionButtonBackspaceHandler:(id)sender;
 
+- (IBAction)functionButtonDecimalEnable:(id)sender;
 
 @end
 

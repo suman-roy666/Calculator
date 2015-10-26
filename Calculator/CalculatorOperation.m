@@ -11,9 +11,7 @@
 @implementation CalculatorOperation{
     
     float operand1,
-        operand2;
-    
-    //float result;
+            operand2;
     
     Operation currentOperation;
     
@@ -64,7 +62,7 @@
 - (void)addOperator: ( Operation) nextOperation{
     
     
-    if  (( (nextOperation == MULTIPLY) || (nextOperation == DIVIDE ) ) && currentOperation != NONE ){
+    if  (( (nextOperation == MULTIPLY) || (nextOperation == DIVIDE ) ) && ![ self.outputString isEqualToString:@"0" ] ){
         
         [ self.inputString setString: [ NSString stringWithFormat:@"( %@ )", self.inputString ] ];
         
@@ -92,12 +90,11 @@
             
         case DIVIDE:
             
-            operand1 =  ( operand2 == 0 && ![ self.outputString isEqualToString:@"0" ] ) ? INFINITY :operand1 / operand2;
+            operand1 =  ( operand2 == 0 && ![ self.inputString isEqualToString:@"0" ] ) ? INFINITY :operand1 / operand2;
             
             break;
             
         default:
-            
             break;
             
     }
@@ -108,7 +105,7 @@
     operand2 = 0;
     
     [ self.inputString appendString: operatorStrings[currentOperation] ];
-    [ self.outputString setString: [ NSString stringWithFormat:@"%.2f",operand1]];
+    [ self.outputString setString: [ NSString stringWithFormat:@"%.4f",operand1]];
     
 }
 

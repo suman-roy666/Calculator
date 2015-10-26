@@ -33,6 +33,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Number Button Handlers
+
 - (IBAction)numberButtonOneHandler:(id)sender {
     
     [ operationHandler addDigit:1 ];
@@ -93,6 +95,7 @@
     
 }
 
+#pragma mark - Function Button Handlers
 
 - (IBAction)functonButtonAddHandler:(id)sender{
     
@@ -142,17 +145,23 @@
     
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
     
-    [ operationHandler clearOperations ];
-    
-    
 }
 
-- (IBAction)functionButtonRemoveHandler:(id)sender {
+- (IBAction)functionButtonClearHandler:(id)sender {
     
     [ operationHandler clearOperations ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
     
+}
+
+- (IBAction)functionButtonBackspaceHandler:(id)sender {
+    
+    
+    
+}
+
+- (IBAction)functionButtonDecimalEnable:(id)sender {
 }
 
 @end

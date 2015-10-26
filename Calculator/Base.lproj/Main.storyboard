@@ -228,6 +228,7 @@
                                     <rect key="frame" x="12" y="564" width="83" height="83"/>
                                 </variation>
                                 <connections>
+                                    <action selector="functionButtonDecimalEnable:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ePj-6o-I6g"/>
                                     <action selector="numberButtonZeroHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h3i-4t-jwi"/>
                                 </connections>
                             </button>
@@ -308,7 +309,7 @@
                                     <rect key="frame" x="16" y="203" width="168" height="83"/>
                                 </variation>
                                 <connections>
-                                    <action selector="functionButtonRemoveHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i1I-IX-QSM"/>
+                                    <action selector="functionButtonClearHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1sT-ty-dI0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixd-QL-HNn">
@@ -324,7 +325,7 @@
                                     <rect key="frame" x="191" y="203" width="174" height="83"/>
                                 </variation>
                                 <connections>
-                                    <action selector="functionButtonRemoveHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qf8-1r-1cb"/>
+                                    <action selector="functionButtonBackspaceHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MIu-43-kaO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVd-cR-cJt">
