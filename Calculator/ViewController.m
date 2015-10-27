@@ -15,6 +15,7 @@
 @implementation ViewController{
     
     CalculatorOperation *operationHandler;
+    BOOL isDecimal;
 }
 
 - (void)viewDidLoad {
@@ -25,6 +26,8 @@
     
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
+    
+    isDecimal = NO;
     
 }
 
@@ -37,60 +40,60 @@
 
 - (IBAction)numberButtonOneHandler:(id)sender {
     
-    [ operationHandler addDigit:1 ];
+    [ operationHandler addDigit:1 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonTwoHandler:(id)sender{
     
-    [ operationHandler addDigit:2 ];
+    [ operationHandler addDigit:2 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonThreeHandler:(id)sender {
     
-    [ operationHandler addDigit:3 ];
+    [ operationHandler addDigit:3 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonFourHandler:(id)sender{
-    [ operationHandler addDigit:4 ];
+    [ operationHandler addDigit:4 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonFiveHandler:(id)sender{
     
-    [ operationHandler addDigit:5 ];
+    [ operationHandler addDigit:5 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonSixHandler:(id)sender{
     
-    [ operationHandler addDigit:6 ];
+    [ operationHandler addDigit:6 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonSevenHandler:(id)sender{
     
-    [ operationHandler addDigit:7 ];
+    [ operationHandler addDigit:7 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonEightHandler:(id)sender{
     
-    [ operationHandler addDigit:8 ];
+    [ operationHandler addDigit:8 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonNineHandler:(id)sender{
     
-    [ operationHandler addDigit:9 ];
+    [ operationHandler addDigit:9 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
 }
 
 - (IBAction)numberButtonZeroHandler:(id)sender{
     
-    [ operationHandler addDigit:0 ];
+    [ operationHandler addDigit:0 asDecimal:isDecimal ];
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
 }
@@ -100,6 +103,7 @@
 - (IBAction)functonButtonAddHandler:(id)sender{
     
     [ operationHandler addOperator:ADD ];
+    isDecimal = NO;
     
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
@@ -110,6 +114,7 @@
 - (IBAction)functonButtonSubtractHandler:(id)sender{
     
     [ operationHandler addOperator:SUBTRACT ];
+    isDecimal = NO;
     
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
@@ -120,6 +125,7 @@
 - (IBAction)functonButtonDivideHandler:(id)sender{
     
     [ operationHandler addOperator:DIVIDE ];
+    isDecimal = NO;
     
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
@@ -130,6 +136,7 @@
 - (IBAction)functonButtonMultiplyHandler:(id)sender{
     
     [ operationHandler addOperator:MULTIPLY ];
+    isDecimal = NO;
     
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
@@ -140,6 +147,7 @@
 - (IBAction)functionButtonResultHandler:(id)sender {
     
     [ operationHandler addOperator:NONE ];
+    isDecimal = NO;
     
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     
@@ -150,6 +158,8 @@
 - (IBAction)functionButtonClearHandler:(id)sender {
     
     [ operationHandler clearOperations ];
+    isDecimal = NO;
+    
     [ self.inputDisplayLabel setText: operationHandler.inputString ];
     [ self.outputDisplayLabel setText: operationHandler.outputString ];
     
@@ -162,6 +172,13 @@
 }
 
 - (IBAction)functionButtonDecimalEnable:(id)sender {
+    
+    if ( !isDecimal ) {
+        isDecimal = YES;
+        [ self.inputDisplayLabel setText: [ NSString stringWithFormat:@"%@.", operationHandler.inputString ] ];
+
+    }
+    
 }
 
 @end

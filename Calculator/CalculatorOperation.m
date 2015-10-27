@@ -11,17 +11,20 @@
 @implementation CalculatorOperation{
     
     float operand1,
-            operand2;
+    operand2;
     
     Operation currentOperation;
     
     NSArray *operatorStrings;
+    
 }
+
+static int multiplier = 10;
 
 -(id) init{
     
-    operand1 = 0;
-    operand2 = 0;
+    operand1 = 0.0f;
+    operand2 = 0.0f;
     _outputString =  [ NSMutableString stringWithString: @"0" ];
     _inputString =  [ NSMutableString stringWithString: @"0" ];
     
@@ -36,26 +39,48 @@
     return self;
 }
 
-- (void)addDigit : (int) digit{
+- (void)addDigit : (int)digit asDecimal: (BOOL)isDecimal {
     
     
     if ( currentOperation == NONE ) {
         
-        operand1 = ( operand1 * 10) + digit ;
+        operand1 = ( operand1 * multiplier ) + digit;
+        
+        operand1 = ( isDecimal )? ( operand1/multiplier )
+                                : operand1;
         
     } else {
         
-        operand2 = ( operand2 * 10) + digit ;
+        operand2 = ( operand2 * multiplier ) + digit;
+        
+        operand2 = ( isDecimal )? ( operand2/multiplier )
+                                : operand2;
     }
     
-    if ( [self.inputString isEqualToString:@"0" ] ) {
+    
+    if ( isDecimal) {
         
-        [ _inputString setString:[ NSString stringWithFormat:@"%d", digit] ];
+        if ( multiplier == 10 ) {
+            
+            [ _inputString appendString:@"." ];
+        }
+        
+        [ _inputString appendString:[ NSString stringWithFormat:@"%d", digit ] ];
+        
+        
+        multiplier = multiplier * 10;
         
     } else {
         
-        [ _inputString appendString:[ NSString stringWithFormat:@"%d", digit] ];
-        
+        if ( [self.inputString isEqualToString:@"0" ] ) {
+            
+            [ _inputString setString:[ NSString stringWithFormat:@"%d", digit] ];
+            
+        } else {
+            
+            [ _inputString appendString:[ NSString stringWithFormat:@"%d", digit] ];
+            
+        }
     }
 }
 
@@ -90,7 +115,8 @@
             
         case DIVIDE:
             
-            operand1 =  ( operand2 == 0 && ![ self.inputString isEqualToString:@"0" ] ) ? INFINITY :operand1 / operand2;
+            operand1 =  ( operand2 == 0 && ![ self.inputString isEqualToString:@"0" ] ) ? INFINITY
+                                                                                        : (operand1 / operand2);
             
             break;
             
@@ -103,9 +129,10 @@
     currentOperation = nextOperation;
     nextOperation = NONE;
     operand2 = 0;
+    multiplier = 10;
     
     [ self.inputString appendString: operatorStrings[currentOperation] ];
-    [ self.outputString setString: [ NSString stringWithFormat:@"%.4f",operand1]];
+    [ self.outputString setString: [ NSString stringWithFormat:@"%f",operand1]];
     
 }
 
@@ -113,6 +140,7 @@
     
     operand1 = 0;
     operand2 = 0;
+    multiplier = 10;
     currentOperation = NONE;
     [ self.outputString setString:@"0" ];
     [ self.inputString setString:@"0" ];

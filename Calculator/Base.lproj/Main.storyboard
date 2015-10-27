@@ -229,7 +229,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="functionButtonDecimalEnable:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ePj-6o-I6g"/>
-                                    <action selector="numberButtonZeroHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h3i-4t-jwi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eis-nf-p47">

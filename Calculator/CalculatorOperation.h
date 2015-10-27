@@ -23,8 +23,8 @@ typedef enum{
 @property (readonly) NSMutableString *inputString;
 @property (readonly) NSMutableString *outputString;
 
--(void)addDigit : (int) digit;
+-(void)addDigit : (int) digit asDecimal: (BOOL)isDecimal;
 -(void)addOperator: (Operation) operator;
--(void) clearOperations;
+-(void)clearOperations;
 
 @end
